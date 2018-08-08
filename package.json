@@ -29,5 +29,8 @@
     "node-sass": "^4.9.2",
     "razzle": "^2.4.0",
     "sass-loader": "^7.1.0"
+  },
+  "engines": {
+    "node": "8.11.3"
   }
 }
