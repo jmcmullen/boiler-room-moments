@@ -4,7 +4,7 @@ import Switch from 'react-router-dom/Switch';
 import { Provider } from 'mobx-react';
 import Home from './Home';
 import { MomentStore } from '../stores/MomentStore';
-import '../assets/styles/theme.scss';
+import '../assets/styles/theme.css';
 
 const stores = {
   momentStore: new MomentStore(),
