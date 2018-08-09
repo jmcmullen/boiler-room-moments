@@ -1,6 +1,7 @@
 'use strict';
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const merge = require('deepmerge');
 
 module.exports = {
   modify: (config, { target, dev }, webpack) => {
@@ -22,6 +23,6 @@ module.exports = {
       });
     }
 
-    return appConfig;
+    return merge(require('razzle-heroku'), appConfig);
   },
 };
